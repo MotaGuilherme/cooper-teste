@@ -1,13 +1,18 @@
-Execução do Projeto
+## Execução do Projeto
 
-mvn clean install
+```mvn clean install```
 
-Entidades são criadas ao rodar o projeto.
+## Entidades são criadas ao rodar o projeto.
+
+Ao rodar o projeto, automaticamente 2 users serão criados, para autenticar, deve-se usar as credenciais abaixo na rota /api/v1/authenticate para gerar o token.
+
 Usuario: admin
+
 Senha: 123456
 
-Entidades do Projeto:
-create table dbcoop.tb_cliente
+## Entidades do Projeto:
+```
+create table tb_cliente
 (
     co_seq_cliente           int auto_increment
         primary key,
@@ -21,7 +26,7 @@ create table dbcoop.tb_cliente
         unique (nu_cpf)
 );
 
-create table dbcoop.tb_email
+create table tb_email
 (
     co_seq_email int auto_increment
         primary key,
@@ -31,9 +36,9 @@ create table dbcoop.tb_email
         unique (ds_email),
     constraint tb_email_tb_cliente_co_seq_cliente_fk
         foreign key (co_cliente) references dbcoop.tb_cliente (co_seq_cliente)
-);
+);`
 
-create table dbcoop.tb_endereco
+create table tb_endereco
 (
     co_seq_endereco int auto_increment
         primary key,
@@ -49,7 +54,7 @@ create table dbcoop.tb_endereco
 );
 
 
-create table dbcoop.tb_telefone
+create table tb_telefone
 (
     co_seq_telefone  int auto_increment
         primary key,
@@ -60,7 +65,7 @@ create table dbcoop.tb_telefone
         foreign key (co_cliente) references dbcoop.tb_cliente (co_seq_cliente)
 );
 
-create table dbcoop.tb_usuario
+create table tb_usuario
 (
     co_seq_usuario int auto_increment
         primary key,
@@ -76,9 +81,9 @@ create table dbcoop.tb_usuario
         unique (ds_login)
 );
 
-INSERT INTO dbcoop.tb_usuario (nm_usuario, ds_email, ds_senha, st_ativo, co_perfil, ds_login) VALUES ('admin', 'admin@coop.com', '$2a$10$Ke6svuB1KoNEwpe2iG7bteV98sNYxGTd6chhStGnG3h8deCpNssnq', 1, 0, 'admin');
-INSERT INTO dbcoop.tb_usuario (nm_usuario, ds_email, ds_senha, st_ativo, co_perfil, ds_login) VALUES ('comum', 'comum@coop.com', '$2a$10$Ke6svuB1KoNEwpe2iG7bteV98sNYxGTd6chhStGnG3h8deCpNssnq', 1, 1, 'comum');
+INSERT INTO tb_usuario (nm_usuario, ds_email, ds_senha, st_ativo, co_perfil, ds_login) VALUES ('admin', 'admin@coop.com', '$2a$10$Ke6svuB1KoNEwpe2iG7bteV98sNYxGTd6chhStGnG3h8deCpNssnq', 1, 0, 'admin');
+INSERT INTO tb_usuario (nm_usuario, ds_email, ds_senha, st_ativo, co_perfil, ds_login) VALUES ('comum', 'comum@coop.com', '$2a$10$Ke6svuB1KoNEwpe2iG7bteV98sNYxGTd6chhStGnG3h8deCpNssnq', 1, 1, 'comum');
 
-
+```
 
 
