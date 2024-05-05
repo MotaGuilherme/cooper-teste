@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: br.com.jj.coop.cooptest.controller.CepControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.046 s <<< FAILURE! - in br.com.jj.coop.cooptest.controller.CepControllerTest
+recuperarCepInvalido  Time elapsed: 0.335 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<500>
+	at br.com.jj.coop.cooptest.controller.CepControllerTest.recuperarCepInvalido(CepControllerTest.java:49)
+

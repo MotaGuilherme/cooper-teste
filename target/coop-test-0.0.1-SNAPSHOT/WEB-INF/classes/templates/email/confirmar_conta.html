@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}" lang="en">
+  <head>
+    <title>Confirmação de conta COOPERFORTE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" th:href="@{|${baseUrl}/favicon.ico|}" />
+  </head>
+  <body>
+    <p>Olá</p>
+    <p>Confirme a criaçao de sua conta no link a seguir:</p>
+    <p>
+      <a th:with="url=(@{|${baseUrl}/api/v1/usuarios/ativar-contar/${usuario.chave}|})" th:href="${url}" th:text="${url}">Link</a>
+    </p>
+    <p>
+      <span>Atenciosamente, </span>
+      <br />
+      <em>COOP - Cooperativa de Crédito Mútuo.</em>
+    </p>
+  </body>
+</html>

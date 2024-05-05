@@ -1,0 +1,21 @@
+# Created at 2024-05-04T22:12:22.268
+mai 04, 2024 10:12:22 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2024-05-04T22:12:22.269
+INFORMA��ES: Loading JUnit Platform configuration parameters from classpath resource [file:/C:/Users/Faustola/Desktop/backend/target/test-classes/junit-platform.properties].
+
+# Created at 2024-05-04T22:12:31.811
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2024-05-04T22:12:31.812
+WARNING: Illegal reflective access by com.hazelcast.internal.networking.nio.SelectorOptimizer (file:/C:/Users/Faustola/.m2/repository/com/hazelcast/hazelcast/4.1.5/hazelcast-4.1.5.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+
+# Created at 2024-05-04T22:12:31.815
+WARNING: Please consider reporting this to the maintainers of com.hazelcast.internal.networking.nio.SelectorOptimizer
+
+# Created at 2024-05-04T22:12:31.816
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2024-05-04T22:12:31.816
+WARNING: All illegal access operations will be denied in a future release
+
